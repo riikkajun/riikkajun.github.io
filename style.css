@@ -110,6 +110,22 @@ section {
     padding: 0px 30px 30px 30px;
 }
 
+@media only screen and (max-width: 650px) {
+    .logo {
+        max-width: 300px;  /* Suurempi koko mobiilissa */
+    }
+    
+    .image {
+        width: 100%;  /* Kuvan leveys täyttää koko tilan */
+        height: auto;  /* Kuvan korkeus skaalautuu suhteessa leveyteen */
+    }
+
+    .image img {
+        max-width: 100%;  /* Kuvan leveys täyttää koko tilan */
+        height: auto;  /* Kuvan korkeus skaalautuu automaattisesti */
+    }
+}
+
 @media only screen and (min-width: 650px) {  
     body {
         font-size: 18px;
